@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form By Rohini</title>
+</head>
+<body>
+    <form name="frm">
+      <table width="100%" cellpadding="7" cellspacing="5">
+        <tr>
+            <td colspan="2" bgcolor="skyblue">Individual Registration</td>
+        </tr>
+        <tr>
+            <td> 
+                <font color="red">* mandatory</font>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="skyblue">
+                GARBAGE/JUNK VALUES IN PROFILE MAY LEAD TO DEACTIVATION<BR>
+                Please use a valid E-Mail ID and mobile number in registration
+            </td>
+        </tr>
+        <tr>
+            <td width="200">User ID<font color="red"> *</td>
+            <td>
+                <input type="text" name="uname" placeholder="TEST">&nbsp;&nbsp;&nbsp;<span><a href="#">Check Availability</a></span>   
+            </td> 
+        </tr>
+        <tr>
+            <td>Password<font color="red"> *</td>
+            <td>
+                <span>Between 3 to 10 character. Only letter number and underscore are allowed</span><br>
+                <input type="password" name="pwd">
+            </td>
+        </tr>
+        <tr>
+            <td>Confirm Password<font color="red"> *</td>
+            <td>
+                <span>Min 8 character & Max 15 character. Password must contain atleast one small & one capital alphabet and numeric digit.</span><br>
+                <input type="password" name="pwd">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <font color="blue">If you forget your password, we will identify you with this information</font> 
+            </td>
+        </tr>
+        <tr>
+            <td>Security Question<font color="red"> *</td>
+            <td>
+                <select name="sq" style="width: 300px;">
+                    <option value="" selected>-Select Question-</option>
+                    <option value="Petname">What is your petname?</option>
+                    <option value="Favcolor">What is your favourite color?</option>
+                </select>    
+            </td>
+        </tr>    
+        <tr>
+            <td>Security Answer<font color="red"> *</td>
+            <td>
+                <input type="password" name="sa">   
+            </td> 
+        </tr>
+        <tr>
+            <td>Preferred Language<font color="red"> *</td>
+            <td>
+                <select name="pl" style="width: 300px;">
+                    <option value="" selected>-Select Language-</option>
+                    <option value="beng">English</option>
+                    <option value="beng">Bengali</option>
+                    <option value="beng">Hindi</option>
+                </select>    
+            </td>
+        </tr>
+      </table>
+      <table width="100%" cellpadding="7" cellspacing="5">
+        <tr>
+            <td colspan="2" bgcolor="skyblue">Personal Details</td>
+        </tr>
+        <tr>
+            <td>First Name<font color="red"> *</font></td>
+            <td><input type="text" name="fname"></td>
+        </tr>
+        <tr>
+            <td>Middle Name</td>
+            <td><input type="text" name="mname"> (Optional)</td>
+        </tr>
+        <tr>
+            <td>Last Name<font color="red"> *</font></td>
+            <td><input type="text" name="lname"></td>
+        </tr>
+        <tr>
+            <td>Gender<font color="red"> *</font></td>
+            <td>
+                <input type="radio" name="gender" value="Male" checked>Male
+                <input type="radio" name="gender" value="Female">Female
+            </td>
+        </tr>
+        <tr>
+            <td>Marital Status<font color="red"> *</font></td>
+            <td>
+                <input type="radio" name="marital status" value="Married" checked>Married
+                <input type="radio" name="marital status" value="Unmarried">Unmarried
+            </td>
+        </tr>
+        <tr>
+            <td>Date of birth<font color="red"> *</font></td>
+            <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+            <td>Occupation<font color="red"> *</font></td>
+            <td>
+                <select name="Occupation">
+                    <option value="" selected>Public</option>
+                    <option value="Government">Government</option>
+                    <option value="Non-Government">Non-Government</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Aadhar Card No</td>
+            <td><input type="password" name="acno"> (Optional)</td>
+        </tr>
+        <tr>
+            <td>PAN Card</td>
+            <td><input type="password" name="pan"> (Optional)</td>
+        </tr>
+        <tr>
+            <td>Email<font color="red"> *</font></td>
+            <td><input type="email" name="email_id" required></td>
+        </tr>
+        <tr>
+            <td>Mobile<font color="red"> *</font></td>
+            <td>+91<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td>
+        </tr>
+        <tr>
+            <td>Nationality<font color="red"> *</font></td>
+            <td>
+                <select name="nationality">
+                    <option value="" selected>-Select nationality-</option>
+                    <option value="Indian">Indian</option>
+                    <option value="American">American</option>
+                </select>
+            </td>
+        </tr>
+      </table>   
+      <table width="100%" cellpadding="7" cellspacing="5">
+        <tr>
+            <td colspan="2" bgcolor="skyblue">Residential Address</td>
+        </tr>
+        <tr>
+            <td>Flat/Door/BlockNo.<font color="red"> *</font></td>
+            <td><input type="text" name="flatno" required></td>
+        </tr>
+        <tr>
+            <td>Street/Lane</td>
+            <td><input type="text" name="street">(Optional)</td>
+        </tr>
+        <tr>
+            <td>Area/Locality</td>
+            <td><input type="text" name="locality">(Optional)</td>
+        </tr>
+        <tr>
+            <td>Country<font color="red"> *</font></td>
+            <td>
+                <select name="country">
+                    <option value="" selected>-Select Country-</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Pin Code<font color="red"> *</font></td>
+            <td><input type="numbers" name="pin" required pattern="{1,}"></td>
+        </tr>
+        <tr>
+            <td>State<font color="red"> *</font></td>
+            <td><input type="text" name="state" placeholder="DELHI"></td>
+        </tr>
+        <tr>
+            <td>City/Town<font color="red"> *</font></td>
+            <td>
+                <select name="city">
+                    <option value="" selected>-Select City-</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="California">California</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Post Office<font color="red"> *</font></td>
+            <td>
+                <select name="postoffice">
+                    <option value="" selected>-Select P.O.-</option>
+                    <option value="Kasba P.O.">Kasba P.O.</option>
+                    <option value="Texas P.O.">Texas P.O.</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Phone<font color="red"> *</font></td>
+            <td><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td>
+        </tr>
+        <tr>
+            <td><font color="blue">Copy Residence to Office Adress</font></td>
+            <td>
+                <input type="radio" name="Residence" value="Yes" checked>Yes
+                <input type="radio" name="Residence" value="No">No
+            </td>
+        </tr> 
+      </table>
+      <table width="100%" cellpadding="7" cellspacing="5">
+        <tr>
+            <td>Type Code Shown</td>
+            <td>
+                <span><h2 style="margin:0;padding:0;">YAD9K</h2></span>
+                <span><font color="grey">refresh</font></span><br>
+                <input type="text" name="code" placeholder="YAD9K"><br>
+                <span>Captcha letters are case sensitive and to be entered in upper case only</span>
+            </td>
+        </tr>
+      </table>    
+      <table width="100%" cellpadding="7" cellspacing="5">
+        <tr>
+            <td colspan="2" bgcolor="skyblue"><font color="green">Subscription to IRCTC New letters/Promotions/IRCTC SBI Card through email/SMS</font></td>
+        </tr>  
+        <tr>
+            <td><font color="blue">IRCTC Newsletters</font></td>
+            <td>
+                <input type="radio" name="Newsletters" value="Yes" checked>Yes
+                <input type="radio" name="Newsletters" value="No">No
+            </td>
+        </tr>
+        <tr>    
+            <td><font color="blue">Commercial Promotions</font></td>
+            <td>
+                <input type="radio" name="CPromotions" value="Yes" checked>Yes
+                <input type="radio" name="CPromotions" value="No">No
+            </td>
+        </tr>
+        <tr>    
+            <td><font color="blue">Please inform me about IRCTC SBI Card through phone*</font></td>
+            <td>
+                <input type="radio" name="Inform" value="Yes" checked>Yes
+                <input type="radio" name="Inform" value="No">No
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="skyblue" colspan="2" align="center">
+               <font color="blue">
+                <a href="#">
+                    Submit Registration Form>>>
+                </a>
+            </font>
+            </td>
+        </tr> 
+      </table>
+    </form>   
+</body>
+</html>
